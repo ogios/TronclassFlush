@@ -2,6 +2,8 @@
 刷欧亚畅课课程访问量的小程序
 
 ## 食用指北
+> conf.ini自行创建
+
 使用flush.py文件：
 ```shell
 python .\flush.py -session "<session>" -url "<course_url>" -count <count>
