@@ -135,8 +135,9 @@ def main(session, url, count) -> None:
                 f.write(json.dumps({"session": session}))
         else:
             js: dict = {}
-            with open("conf.ini", "w+") as f:
+            with open("conf.ini", "r+") as f:
                 conf = f.read()
+                print("conf: ", conf)
                 try:
                     js = json.loads(conf)
                 except Exception as e:
@@ -146,6 +147,8 @@ def main(session, url, count) -> None:
             else:
                 print("No session")
                 return
+        # print('session:', session)
+        # print("url:", url)
         f = Flush(courseURL=url, session=session,
                   totalCount=int(count), progressBar=True)
         f.flush()
