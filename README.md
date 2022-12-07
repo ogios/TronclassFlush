@@ -2,9 +2,13 @@
 刷欧亚畅课课程访问量的小程序
 
 ## 食用指北
-
+使用flush.py文件：
 ```shell
 python .\flush.py -session "<session>" -url "<course_url>" -count <count>
+```
+使用flush.exe文件:
+```shell
+flush.exe -session "<session>" -url "<course_url>" -count <count>
 ```
 
 ### session与课程获取
