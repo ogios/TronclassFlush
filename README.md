@@ -32,7 +32,7 @@ $.cookie("session")
 
 ## 测试页面
 本人用flask暂时做了一个测试交互页面，并非永久开启，随时可能关闭：
-http://47.94.146.109:5570/  
+[test](http://47.94.146.109:5570/)  
 可能存在无效的刷新，不稳定  
 
 ![htmlexample](https://user-images.githubusercontent.com/96933655/206091858-b966993d-e24a-4279-9d7b-1d76b894f000.png)
