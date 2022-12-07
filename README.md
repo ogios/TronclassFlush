@@ -2,6 +2,7 @@
 刷欧亚畅课课程访问量的小程序
 
 ## 食用指北
+
 > conf.ini自行创建
 
 使用flush.py文件：
@@ -16,6 +17,11 @@ flush.exe -session "<session>" -url "<course_url>" -count <count>
 ### session与课程获取
 
 > 暂时还没有方法通过账号密码获取session，学的还差很多😭只能手动登录之后在开发者工具中获取  
+
+登入后在页面里打开开发者工具，在控制台中输入:
+```javascript
+$.cookie("session")
+```
 
 手动复制，在命令行中加入 `-session ` 并粘贴在它后面，记得用双引号括起来，运行后session会被保存，下次再刷可以不输入session，除非session更新或失效
 
