@@ -5,12 +5,18 @@
 
 > conf.ini自行创建
 
-使用flush.py文件：
-```shell
+使用flush.py文件, 需要安装的第三方库:
+```bat
+pip install alive_progress, requests, click
+```
+
+
+```bat
 python .\flush.py -session "<session>" -url "<course_url>" -count <count>
 ```
 使用flush.exe文件:
-```shell
+
+```bat
 flush.exe -session "<session>" -url "<course_url>" -count <count>
 ```
 
